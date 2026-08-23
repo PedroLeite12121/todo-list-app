@@ -32,7 +32,7 @@ export function UsuariosScreen({navigation}) {
   }
 
   const fetchUsuarios = async () => {
-    const API_URL = `https://tasklist-backend-t8ce.onrender.com/usuarios`; 
+    const API_URL = `https://todo-list-backend-hiv5.onrender.com/usuarios`; 
 
     try {
       const response = await axios.get(API_URL);

@@ -35,7 +35,7 @@ export function LoginScreen({navigation}) {
   const login = async () => {
     setLoading(true)
 
-    const API_URL = `https://tasklist-backend-t8ce.onrender.com/auth/login`; 
+    const API_URL = `https://todo-list-backend-hiv5.onrender.com/auth/login`; 
     let payload = {email: emailForm, senha: senhaForm}
     
     try {

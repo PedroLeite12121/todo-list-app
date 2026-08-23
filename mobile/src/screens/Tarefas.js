@@ -44,7 +44,7 @@ export function TarefasScreen({navigation}) {
       return
     }
 
-    const API_URL = `https://tasklist-backend-t8ce.onrender.com/tarefas/${item.idTarefa}`;
+    const API_URL = `https://todo-list-backend-hiv5.onrender.com/tarefas/${item.idTarefa}`;
     const idUsuario = await getIdUsuario()
 
     try {
@@ -65,7 +65,7 @@ export function TarefasScreen({navigation}) {
   };
 
   const handleDelete = async (id) => {
-    const API_URL = `https://tasklist-backend-t8ce.onrender.com/tarefas/${id}`;
+    const API_URL = `https://todo-list-backend-hiv5.onrender.com/tarefas/${id}`;
     try {
        if (Platform.OS === 'web') {
         const confirmDelete = window.confirm(`Tem certeza que deseja apagar a tarefa`);
@@ -96,7 +96,7 @@ export function TarefasScreen({navigation}) {
   const fetchTarefas = async () => {
     const idUsuario = await getIdUsuario()
 
-    const API_URL = `https://tasklist-backend-t8ce.onrender.com/tarefas/usuario/${idUsuario}`; 
+    const API_URL = `https://todo-list-backend-hiv5.onrender.com/tarefas/usuario/${idUsuario}`; 
 
     try {
       const response = await axios.get(API_URL);

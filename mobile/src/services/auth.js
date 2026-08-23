@@ -37,7 +37,7 @@ export const getUsername = async () => {
 };
 
 export const checkUserExists = async (id) => {
-  const API_URL = `https://tasklist-backend-t8ce.onrender.com/usuarios/${id}`;
+  const API_URL = `https://todo-list-backend-hiv5.onrender.com/usuarios/${id}`;
 
   try {
     const response = await axios.get(API_URL);

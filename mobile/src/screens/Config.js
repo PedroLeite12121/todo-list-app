@@ -21,7 +21,7 @@ export function ConfigScreen({navigation}) {
   
   const handleDelete = async () => {
     setLoading(true);
-    const API_URL = `https://tasklist-backend-t8ce.onrender.com/usuarios/${await getIdUsuario()}`; 
+    const API_URL = `https://todo-list-backend-hiv5.onrender.com/usuarios/${await getIdUsuario()}`; 
     try {
       if (Platform.OS === 'web') {
         const confirmDelete = window.confirm(`Tem certeza que deseja apagar sua conta?`);

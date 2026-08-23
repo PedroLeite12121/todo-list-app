@@ -29,7 +29,7 @@ export function AddTarefasScreen({navigation}) {
     }
 
     const idUsuario = await getIdUsuario()
-    const API_URL = `https://tasklist-backend-t8ce.onrender.com/tarefas`; 
+    const API_URL = `https://todo-list-backend-hiv5.onrender.com/tarefas`; 
     
     try {
       const payload = {nome_da_tarefa: nomeTarefa, tempo: tempoTarefa, relevancia: relevanciaTarefa, status: statusTarefa, idUsuario: idUsuario}

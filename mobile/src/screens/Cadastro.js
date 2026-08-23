@@ -27,7 +27,7 @@ export function CadastroScreen({navigation}) {
   const cadastrar = async () => {
     setLoading(true)
 
-    const API_URL = `https://tasklist-backend-t8ce.onrender.com/usuarios`; 
+    const API_URL = `https://todo-list-backend-hiv5.onrender.com/usuarios`; 
     
     try {
       let payload = {nome: nomeForm, usuario: usuarioForm, email: emailForm, senha: senhaForm}

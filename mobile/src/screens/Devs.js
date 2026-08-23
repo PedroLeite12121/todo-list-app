@@ -16,10 +16,10 @@ export function DevsScreen({navigation}) {
   const [loading, setLoading] = useState(true);
 
   const [fontsLoaded] = useFonts({Inter_700Bold});
-  const ROUTE = `https://tasklist-backend-t8ce.onrender.com`
+  const ROUTE = `https://todo-list-backend-hiv5.onrender.com`
 
   const fetchDevs = async () => {
-    const API_URL = 'https://tasklist-backend-t8ce.onrender.com/devs'
+    const API_URL = 'https://todo-list-backend-hiv5.onrender.com/devs'
 
     try {
       const response = await axios.get(API_URL);
